@@ -1,0 +1,142 @@
+
+/*--------------Global Styles-------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    color: #02182B;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16.5px;
+    line-height: 1.5;
+}
+
+a:link {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2em;
+    
+}
+
+h1, h2 {
+    font-family: 'Bad Script', cursive;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-decoration: solid;
+}
+
+
+
+img {
+    width: 300px;
+}
+
+.section-format {
+    width: 70%;
+    margin:0 auto;
+    padding: 40px;
+}
+
+.projects h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+
+
+/*--------------Profile Styles-------------------*/
+header {
+    background-color: #02020A;
+    color: whitesmoke;
+
+}
+
+
+/*--------------Project Styles-------------------*/
+.projects {
+    background-color: #E1E2EF;
+}
+
+.projects a {
+    color: #05204A;
+    text-decoration: underline;
+}
+
+.projects .btn {
+    background-color: #05204A;
+    color: whitesmoke;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+
+.projects .btn:hover {
+    background-color: rgba(5, 32, 74, 80%);
+}
+
+.project-type {
+    overflow: hidden;
+    margin: 20px;
+
+    /* clear: both; */
+}
+
+.notLast-proj {
+    overflow: hidden;
+    margin: 20px;
+    border-bottom: 1px dashed #05204A;
+    padding: 10px;
+}
+
+.project-type img {
+    float: left;
+    margin: 10px;
+}
+
+
+/*--------------Work Experience Styles-------------------*/
+.work {
+    background-color: #9DD9D2;
+}
+
+
+
+
+/*--------------Education Styles-------------------*/
+
+.education {
+    background-color: #BFACAA;
+}
+
+
+/*--------------Contact info Styles-------------------*/
+
+footer {
+    background-color: #02020A;
+    color: whitesmoke;
+}
+
+
+
