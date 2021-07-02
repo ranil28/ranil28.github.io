@@ -10,16 +10,16 @@ html {
 }
 
 body {
-    color: #02182B;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16.5px;
     line-height: 1.5;
+    text-align: center;
 }
 
-a:link {
-    color: yellow;
+a {
+    color: white;
     text-decoration: none;
 }
 
@@ -29,17 +29,17 @@ a:hover {
 
 h2 {
     margin: 0;
-    font-size: 2em;
-    
+    font-size: 40px;
 }
 
 h1, h2 {
-    font-family: 'Bad Script', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 120px;
     text-decoration: solid;
+    padding: 0;
 }
 
 
@@ -65,49 +65,143 @@ img {
 
 /*--------------Profile Styles-------------------*/
 header {
-    background-color: #02020A;
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9) ), url(../images/about.png);
+    background-attachment: fixed;
+    background-size: cover;
     color: whitesmoke;
+    height: 1000px;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
 
+header li {
+    display: inline-block;
+    padding: 20px;
+    border-style: solid;
+    border-color: #894845;
+}
+
+header h2 {
+    padding-bottom: 60px;
+    color: #894845;
+}
+
+a:active a:link a:visited {
+    color: white;
+}
+
+
+
+/*--------------About Styles-------------------*/
+
+.About {
+    background: url(../images/projects-cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    color: whitesmoke;
+    /* margin: 0; */
+    padding-top: 50px;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-bottom: 50px;
+    
+}
+
+.About h3 {
+    color: goldenrod;
+    
+}
+
+.About h2 {
+    margin-top: 100px;
+}
+
+
+.About h2 {
+    color: #894845;
+}
+
+.About li {
+    color: black;
+    background-color: lightyellow;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.About li:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.About p {
+    text-align: justify;
+}
+
+
+h4 {
+    color: whitesmoke;
+    height: 20px;
 }
 
 
 /*--------------Project Styles-------------------*/
 .projects {
-    background-color: #E1E2EF;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/project.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    color: whitesmoke;
+}
+
+.projects h2 {
+    margin-top: 100px;
+    text-align: center;
+    color: #CBA879;
+}
+
+.projects h3 {
+    color : #D4B690;
 }
 
 .projects a {
-    color: #05204A;
     text-decoration: underline;
 }
 
 .projects .btn {
-    background-color: #05204A;
     color: whitesmoke;
     padding: 8px;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
-    
+    background-color: #894845;
 }
 
 
 .projects .btn:hover {
-    background-color: rgba(5, 32, 74, 80%);
+    background-color: #906A38;
 }
 
 .project-type {
     overflow: hidden;
     margin: 20px;
-
+    width: 50%;
+    flex: 50%;
+    display: inline-block;
+    padding: 30px;
     /* clear: both; */
 }
 
 .notLast-proj {
     overflow: hidden;
     margin: 20px;
-    border-bottom: 1px dashed #05204A;
-    padding: 10px;
+    border-bottom: 1px dashed #894845;
+    padding: 30px;
 }
 
 .project-type img {
@@ -115,11 +209,48 @@ header {
     margin: 10px;
 }
 
+/* .projects p {
+    text-align: initial;
+    padding-left: 10px;
+} */
+
 
 /*--------------Work Experience Styles-------------------*/
 .work {
-    background-color: #9DD9D2;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/experience.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    color: whitesmoke;
 }
+
+.work h2{
+    color: #CBA879;
+    text-align: center;
+}
+
+.work h3{
+    color: #CBA879;
+}
+
+.work .section-format {
+    width: 60%;
+    float: right;
+    text-align: justify;
+}
+
+.work p {
+    margin : 5px;
+}
+
+.work li {
+    list-style-type: square;
+}
+
+
+
+
+
 
 
 
@@ -127,7 +258,28 @@ header {
 /*--------------Education Styles-------------------*/
 
 .education {
-    background-color: #BFACAA;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sharon-mccutcheon-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.education h2 {
+    color: #EEE2D2;
+    padding:30px;
+}
+
+.education h3 {
+    color: #EEE2D2;
+    padding-top: 50px;
+}
+
+.education .section-format {
+    /* float: inherit; */
+    /* text-align: justify; */
+    padding: 30px;
 }
 
 
@@ -137,6 +289,34 @@ footer {
     background-color: #02020A;
     color: whitesmoke;
 }
+
+footer .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  footer .social > a:hover {
+    opacity:0.9;
+  }
+
+  .email:hover {
+      
+
+  }
 
 
 
