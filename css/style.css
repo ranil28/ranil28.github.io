@@ -28,8 +28,7 @@ a:hover {
 }
 
 h2 {
-    margin: 0;
-    font-size: 40px;
+
 }
 
 h1, h2 {
@@ -41,6 +40,32 @@ h1 {
     text-decoration: solid;
     padding: 0;
 }
+
+@media screen and (min-width: 601px) {
+    h1 {
+      font-size: 120px;
+    }
+    h2 {
+        margin: 0;
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+        margin: 0;
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+  }
 
 
 
@@ -69,7 +94,8 @@ header {
     background-attachment: fixed;
     background-size: cover;
     color: whitesmoke;
-    height: 1000px;
+    height: 100%;
+    width: 100%;
     text-align: center;
     padding-top: 140px;
     padding-bottom: 140px;
@@ -101,23 +127,25 @@ a:active a:link a:visited {
     background: url(../images/projects-cover.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 1200px;
+    height: 100%;
+    width: 100%;
     color: whitesmoke;
     /* margin: 0; */
     padding-top: 50px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-bottom: 50px;
     
 }
 
 .About h3 {
     color: goldenrod;
-    
+    text-align: center;
 }
 
 .About h2 {
     margin-top: 100px;
+    
 }
 
 
@@ -157,7 +185,8 @@ h4 {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/project.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 1000px;
+    height: 100%;
+    width: 100%;
     color: whitesmoke;
 }
 
@@ -182,6 +211,7 @@ h4 {
     text-decoration: none;
     display: inline-block;
     background-color: #894845;
+    margin: 0;
 }
 
 
@@ -189,27 +219,45 @@ h4 {
     background-color: #906A38;
 }
 
-.project-type {
-    overflow: hidden;
-    margin: 20px;
-    width: 65%;
-    flex: 50%;
-    display: inline-block;
-    padding: 30px;
-    /* clear: both; */
-}
 
-.notLast-proj {
-    overflow: hidden;
-    margin: 20px;
-    border-bottom: 1px dashed #894845;
-    padding: 30px;
-}
 
-.project-type img {
-    float: left;
-    margin: 10px;
-}
+@media screen and (min-width: 601px) {
+    .project-type {
+        overflow: hidden;
+        margin: 20px;
+        width: 65%;
+        flex: 50%;
+        display: inline-block;
+        padding: 30px;
+        /* clear: both; */
+    }
+    
+    .notLast-proj {
+        overflow: hidden;
+        margin: 20px;
+        border-bottom: 1px dashed #894845;
+        padding: 30px;
+    }
+    
+    .project-type img {
+        float: left;
+        margin: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .projects{
+        width: 100%;
+        padding: 2%;
+        margin: 0;
+        /* margin: 1em;
+        padding: 2.5em; */
+    }
+    img {
+        width: 100%;
+        padding-top: 30px;
+    }
+  }
 
 /* .projects p {
     text-align: initial;
@@ -222,8 +270,18 @@ h4 {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/experience.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 1000px;
     color: whitesmoke;
+    padding-right: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.work p {
+    margin : 5px;
+}
+
+.work li {
+    list-style-type: square;
 }
 
 .work h2{
@@ -235,26 +293,29 @@ h4 {
     color: #CBA879;
 }
 
-.work .section-format {
-    width: 60%;
-    float: right;
-    text-align: justify;
-}
 
-.work p {
-    margin : 5px;
-}
+@media screen and (min-width: 601px) {
+    .section-format-work {
+        width: 100%;
+        padding: 2%;
+        padding-left: 30%;
+        text-align: justify;
+        margin: 0;
+        /* height: 1000px; */
 
-.work li {
-    list-style-type: square;
-}
-
-
-
-
-
-
-
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .section-format-work {
+        width: 80%;
+        text-align: initial;
+        margin: 0;
+        padding: 2%;
+        padding-left: 15%;
+        height: 100%;
+    }
+  }
 
 
 /*--------------Education Styles-------------------*/
