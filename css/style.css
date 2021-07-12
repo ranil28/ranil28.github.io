@@ -104,6 +104,8 @@ a:active a:link a:visited {
     height: 1000px;
     color: whitesmoke;
     /* margin: 0; */
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 50px;
     padding-bottom: 50px;
     
